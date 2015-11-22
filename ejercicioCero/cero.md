@@ -31,3 +31,14 @@ Tambien podemos clonar un proyecto ya creado en github, bitbucket o cualquier re
 ```
 $ git clone git@github.com:craftsmanship-toledo/curso-de-git.git
 ```
+
+#### Fork
+
+Cuando hacemos un fork de un repositorio, se hace una copia exacta del repositorio original, que podemos utilizar como un repositorio git cualquiera.
+
+Después de hacer fork tendremos dos repositorios git idénticos pero con distinta URL. Tras hacer fork, estos dos repositorios tienen exactamente la misma historia, son una copia idéntica.
+
+Finalizado el proceso, tendremos dos repositorios independientes que pueden cada uno evolucionar de forma totalmente autónoma. De hecho, los cambios que se hacen el repositorio original NO se transmiten automáticamente a la copia (fork). Esto tampoco ocurre a la inversa: las modificaciones que se hagan en la copia (fork) NO se transmiten automáticamente al repositorio original.
+
+##### Diferencias entre fork y clone
+Al hacer clone, estamos bajando a nuestra máquina local el repositorio git en cuestión, mientras que al hacer fork, estaremos copiando de manera remota (en Github o Bitbucket, p.e.) el repositorio, y aún tendremos que hacer un clone para bajárnoslo a nuestro local.
