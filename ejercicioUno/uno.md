@@ -10,7 +10,7 @@ Con la mayoría de los otros sistemas de control de versiones, hay 2 lugares par
 
 En Git hay una tercera opción: el stage (área de ensayo o índice). Se trata básicamente de un muelle de carga donde se llega a determinar qué cambios se van a enviar en el siguiente paso, el commit.
 
-#### Ver en que ficheros he introducido cambios
+#### Ver en qué ficheros he introducido cambios
 
 Podemos ver el status de los cambios en nuestros ficheros de la siguiente forma:
 
@@ -24,7 +24,7 @@ Para añadir cambios de un fichero al stage podemos hacerlo de la siguiente form
 ```
 $ git add path/nombreDelArchivo.extensionDelArchivo
 ```
-Tmabién podemos añadir todos los archivos que tienen cambios al stage en una misma operación con el comando:
+También podemos añadir todos los archivos que tienen cambios al stage en una misma operación con el comando:
 
 ```
 $ git add .
