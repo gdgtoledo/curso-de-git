@@ -49,7 +49,7 @@ Podemos editar un commit mal escrito antes de empujarlo con el siguiente comando
 
     $ git commit --amend
     
-Tener en cuenta que lanzará nuestro editor, segurmente vi en consola. Aqui una Cheatsheet de comandos para editar con vi
+Tener en cuenta que lanzará nuestro editor, seguramente vi en consola. Aqui una Cheatsheet de comandos para editar con vi
 
 [Vi cheatsheet](http://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf)
   
