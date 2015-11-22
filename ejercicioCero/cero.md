@@ -10,18 +10,20 @@ Podemos iniciar un proyecto git desde una carpeta vacía o desde un proyecto exi
 
 Para ello solo tendremos que ejecutar si no tenemos un proyecto creado
 
-    $ mkdir nombreDelProyecto
-    $ cd nombreDelProyecto
-    $ git init
-
+```
+$ mkdir nombreDelProyecto
+$ cd nombreDelProyecto
+$ git init
+```
 Esto creara la carpeta oculta .git ocupada de gestionar nuestro proyecto git.
 Este nuevo repositotio local git podremos enlazarlo y sicronizarlo a cualquier repositorio remoto, centralizado o descentralizado.
 
 Tambien podemos hacer que cualquier proyecto ya existente se convierta en un proyecto git, para esto solo tenemos que ejecutar:
 
-    $ cd nombreDelProyectoExistente
-    $ git init
-    
+```
+$ cd nombreDelProyectoExistente
+$ git init
+```
 #### git clone
     
 Tambien podemos clonar un proyecto ya creado en github, bitbucket o cualquier repositorio git centralizado en servidor. 
@@ -29,4 +31,6 @@ Tambien podemos clonar un proyecto ya creado en github, bitbucket o cualquier re
     $ git clone git@github.com:craftsmanship-toledo/curso-de-git.git
 
 
-  
+```
+$ git clone git@github.com:craftsmanship-toledo/curso-de-git.git
+```
