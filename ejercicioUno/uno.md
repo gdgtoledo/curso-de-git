@@ -29,6 +29,20 @@ También podemos añadir todos los archivos que tienen cambios al stage en una m
 ```
 $ git add .
 ```
+
+#### Añadir partes de un fichero con cambios al stage
+Si quisiéramos añadir sólo partes de un fichero al stage, deberíamos primero identificar qué bloques (o chunks) del fichero queremos añadir.
+
+Cada chunk modificado quedará separado de otro chunk modificado por partes sin modificar del fichero (chunks sin modificar), de modo que podríamos ir moviéndonos entre los diferentes chunks seleccionando cuáles añadir o no.
+
+Si el chunk actual es lo suficientemente grande, git nos permitirá partirlo en múltiples chunks, mediante una operación de split, que nos permitirá hacer nuestros cambios mucho más granulares.
+
+Para ello, ejecutaremos el comando:
+
+```
+$ git add path/nombreDelArchivo.extensionDelArchivo -p
+```
+
 ### commit
 
 #### Hacer un commit
