@@ -4,10 +4,11 @@
 
 ### stage
 
-Uno de los conceptos más esenciales en git es el de el stagin area. Su uso fundamental puede cambiar la forma en la que has trabajado hasta ahora con SVN.
+Uno de los conceptos más esenciales en git es el de el staging area. Su uso fundamental puede cambiar la forma en la que has trabajado hasta ahora con SVN.
 
-Con la mayoría de los otros sistemas de control de versiones, hay 2 lugares para almacenar datos: tu copia de trabajo (las carpetas / archivos que estas utilizando actualmente) y el almacén de datos (donde el control de versiones decide cómo empaquetar y almacenar los cambios). En Git hay una tercera opción: el stage ( área de ensayo o índice). Se trata básicamente de un muelle de carga donde se llega a determinar qué cambios se van a envíar en el siguiente paso, el commit.
+Con la mayoría de los otros sistemas de control de versiones, hay 2 lugares para almacenar datos: tu copia de trabajo (las carpetas / archivos que estás utilizando actualmente) y el almacén de datos (donde el control de versiones decide cómo empaquetar y almacenar los cambios).
 
+En Git hay una tercera opción: el stage (área de ensayo o índice). Se trata básicamente de un muelle de carga donde se llega a determinar qué cambios se van a enviar en el siguiente paso, el commit.
 
 #### Ver en que ficheros he introducido cambios
 
@@ -17,10 +18,8 @@ Podemos ver el status de los cambios en nuestros ficheros de la siguiente forma:
 $ git status
 ```
 #### Añadir fichero con cambios al stage
-    
-Para añadir cambios de un fichero al stage podemos hacerlo de la siguiente forma: 
 
-    $ git add path/nombreDelArchivo.extensionDelArchivo
+Para añadir cambios de un fichero al stage podemos hacerlo de la siguiente forma:
 
 ```
 $ git add path/nombreDelArchivo.extensionDelArchivo
@@ -62,4 +61,3 @@ $ git commit --amend
 Tener en cuenta que lanzará nuestro editor, seguramente vi en consola. Aqui una Cheatsheet de comandos para editar con vi
 
 [Vi cheatsheet](http://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf)
-  
