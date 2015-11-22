@@ -27,6 +27,8 @@ Tmabién podemos añadir todos los archivos que tienen cambios al stage en una m
     
 ### commit
 
+#### Hacer un commit
+
 EL commit es el siguiente paso antes de empujar nuestros cambios hacia otro repositorio, con el commit estamos grabando nuestros cambios en nuestro repositorio local.
 
 	$ git commit -m "Mensaje del commit"
@@ -40,4 +42,14 @@ Para escribir buenos mensajes de commits recomiendo siempre este artículo:
 Aunque podríamos resumirlo en algo muy sencillo
 
     $ git commit -m "describe de una manera sencilla tus cambios"
+    
+#### Reescribir un commit mal escrito
+
+Podemos editar un commit mal escrito antes de empujarlo con el siguiente comando
+
+    $ git commit --amend
+    
+Tener en cuenta que lanzará nuestro editor, segurmente vi en consola. Aqui una Cheatsheet de comandos para editar con vi
+
+[Vi cheatsheet](http://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf)
   
