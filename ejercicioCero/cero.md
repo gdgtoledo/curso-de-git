@@ -4,6 +4,8 @@
 
 ### Iniciar un proyecto git en local
 
+#### git init
+
 Podemos iniciar un proyecto git desde una carpeta vacía o desde un proyecto existente cualquiera.
 
 Para ello solo tendremos que ejecutar si no tenemos un proyecto creado
@@ -19,4 +21,12 @@ Tambien podemos hacer que cualquier proyecto ya existente se convierta en un pro
 
     $ cd nombreDelProyectoExistente
     $ git init
+    
+#### git clone
+    
+Tambien podemos clonar un proyecto ya creado en github, bitbucket o cualquier repositorio git centralizado en servidor. 
+
+    $ git clone git@github.com:craftsmanship-toledo/curso-de-git.git
+
+
   
