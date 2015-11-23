@@ -21,7 +21,7 @@ Para añadir cambios de un fichero al stage podemos hacerlo de la siguiente form
 
     $ git add path/nombreDelArchivo.extensionDelArchivo
 
-Tmabién podemos añadir todos los archivos que tienen cambios al stage en una misma operación con el comando:
+También podemos añadir todos los archivos que tienen cambios al stage en una misma operación con el comando:
 
      $ git add .
     
@@ -52,4 +52,18 @@ Podemos editar un commit mal escrito antes de empujarlo con el siguiente comando
 Tener en cuenta que lanzará nuestro editor, seguramente vi en consola. Aqui una Cheatsheet de comandos para editar con vi
 
 [Vi cheatsheet](http://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf)
+
+## push
+
+### Empujando nuestors cambios a otro repositorio
+
+Hasta ahora con el commit hemos grabado nuestros cambios en nuestro repositorio en local, vamos ahora a empujar nuestros cambios hacia cualquier repositorio que tengamos enlazado.
+
+    $git push repositorioAlQueEmpujar ramaALaQueEmpujar
+    $git push origin dev
+    
+En este ejemplo origin es el repositorio origen que tengamos enlazado, en el caso de haber enlazado nuestro repositorio local con un git clone, origin es el repositorio de donde hemos clonado nuestra copia en local. Como vemos, podemos seleccionar la rama del repositorio a la que empujar nuestros cambios, en el ejemplo dev, nuestra rama de desarrollo.
+
+
+
   
