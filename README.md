@@ -1,21 +1,21 @@
 # CURSO DE GIT - craftsmanship Toledo
 
 
-### Ejercicio 0 - Iniciar un proyecto git/git init/git clone/fork
+### [Ejercicio 0 - Iniciar un proyecto git/git init/git clone/fork](ejercicios/zero/cero.md)
 
 Como empezar una proyecto git, iniciar desde local o clonar un repositorio existente y en nuestro local. También hablaremos de como podemos usar extras como forkear un repositorio con la interfaz de github para vitaminar nuestro workflow.
 
-### Ejercicio 1 - Uso de stage/commit/push
+### [Ejercicio 1 - Uso de stage/commit/push](ejercicios/uno/uno.md)
 
 Primera modificación de nuestro código, commit y subida al repositorio. Veremos que es el stage y los diferentes estados que pasa un fichero desde que se añade al repositorio, modifica y acaba en el repositorio remoto.
 
 
-### Ejercicio 2 - Uso de pull/fecth, como mantener actualizados mis cambios
+### [Ejercicio 2 - Uso de pull/fecth, como mantener actualizados mis cambios](ejercicios/dos/dos.md)
 
 Primera bajada de código del repositorio remoto, en principio haremos una sincronización sencilla sin conflictos o con rebase.
 
 
-### Ejercicio 3 - Gestión de ramas Locales/Remotas
+### [Ejercicio 3 - Gestión de ramas Locales/Remotas](ejercicios/tres/tres.md)
 
 Crear una rama, cambio de ramas, listar ramas, saber en que rama estamos trabajando, trackear una rama de un repositorio remoto
 
