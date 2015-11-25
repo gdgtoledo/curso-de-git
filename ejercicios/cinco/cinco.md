@@ -48,6 +48,13 @@ Podemos aplicar los cambios del stash de la posición de la pila que queramos, e
 $ git stash apply stash@{0}
 ```
 
+Un atajo que podemos utilizar para aplicar la primera posición de la pila del stash es el siguiente comando:
+
+```
+$ git stash pop
+```
+que utiliza la operación `pop` de la pila para sacar los cambios correspondientes, aplicándolos al proyecto.
+
 ### Limpiar el stash
 
 Podemos limpiar toda la pila del stash con el siguiente comando:
