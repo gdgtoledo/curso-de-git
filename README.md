@@ -17,11 +17,11 @@ Primera bajada de código del repositorio remoto, en principio haremos una sincr
 
 Crear una rama, cambio de ramas, listar ramas, saber en qué rama estamos trabajando, trackear una rama de un repositorio remoto
 
-### Ejercicio 4 - Gestión de repositorios remotos
+### [Ejercicio 4 - Gestión de repositorios remotos](ejercicios/cuatro/cuatro.md)
 
 Gestión de repositorios remotos, el origin no lo es todo, git es un sistema de control de versiones distribuido, aprovechemos su potencia. Añadir, modificar , remover punteros remotos para poder hacer push/pull de cualquiera de ellos en cualquier momento que para el workflow de trabajo sea interesante.
 
-### Ejercicio 5 - ¿Qué es y para qué usar el stash?
+### [Ejercicio 5 - ¿Qué es y para qué usar el stash?](ejercicios/cinco/cinco.md)
 
 El stash, esa pila que nos puede ayudar en multitud de operaciones. Saber identificar los casos mas comunes en los que nos ayudaria, añadir a a pila nuestros cambios, sacar y aplicar de la pila nuestros cambios cuando estemos posicionados donde necesitamos etc.
 
@@ -29,7 +29,7 @@ El stash, esa pila que nos puede ayudar en multitud de operaciones. Saber identi
 
 Vale, me he equivocado añadiendo al stage un fichero, o me he equivocado commiteando un fichero que no quiero añadir en mi push, ¿Qué debo hacer? Aprenderemos a revisar el log y mover el puntero del estado de cada fichero, a quitarlo del stage, a resetear su estado.
 
-### Ejercicio 7 - Rebase y rebase interactivo
+### [Ejercicio 7 - Rebase y rebase interactivo](ejercicios/siete/siete.md)
 
 Una de las cosas más importantes para un buen flujo de trabajo es conocer toda la potencia que git nos pone a nuestro alcance, dos de las más potentes son el rebase y el rebase interactivo, aprenderemos qué es, por qué se usa y cuándo es el momento en el flujo para hacerlo.
 
