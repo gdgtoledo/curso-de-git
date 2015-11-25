@@ -101,4 +101,4 @@ Es casi igual a *Squash*. Se utiliza para juntar el commit marcado con 'f' con e
 Ejecuta un comando de la *shell*, que vendrá determinado por el contenido de la línea en la cual se aplica la 'x'.
 
 ### Resolución de conflictos tras el rebase
-Como hemos mencionado con anterioridad, es importante decir que estas operaciones de rebase podrían acabar en algún tipo de conflicto. Veremos cómo resolver conflictos en el apartado 8.
+Como hemos mencionado con anterioridad, es importante decir que estas operaciones de rebase podrían acabar en algún tipo de conflicto. Veremos cómo resolver conflictos en el [apartado 8](../ocho/ocho.md).
