@@ -17,6 +17,7 @@ Podemos ver el status de los cambios en nuestros ficheros de la siguiente forma:
 ```
 $ git status
 ```
+
 #### Añadir fichero con cambios al stage
 
 Para añadir cambios de un fichero al stage podemos hacerlo de la siguiente forma:
@@ -24,6 +25,7 @@ Para añadir cambios de un fichero al stage podemos hacerlo de la siguiente form
 ```
 $ git add path/nombreDelArchivo.extensionDelArchivo
 ```
+
 También podemos añadir todos los archivos que tienen cambios al stage en una misma operación con el comando:
 
 ```
@@ -31,6 +33,7 @@ $ git add .
 ```
 
 #### Añadir partes de un fichero con cambios al stage
+
 Si quisiéramos añadir sólo partes de un fichero al stage, deberíamos primero identificar qué bloques (o chunks) del fichero queremos añadir.
 
 Cada chunk modificado quedará separado de otro chunk modificado por partes sin modificar del fichero (chunks sin modificar), de modo que podríamos ir moviéndonos entre los diferentes chunks seleccionando cuáles añadir o no.
@@ -82,8 +85,10 @@ Tened en cuenta que lanzará nuestro editor, seguramente vi en consola. Aquí un
 
 Hasta ahora con el commit hemos grabado nuestros cambios en nuestro repositorio en local, vamos ahora a empujar nuestros cambios hacia cualquier repositorio que tengamos enlazado.
 
-    $git push repositorioAlQueEmpujar ramaALaQueEmpujar
-    $git push origin dev
+```    
+$git push repositorioAlQueEmpujar ramaALaQueEmpujar
+$git push origin dev
+```
     
 En este ejemplo origin es el repositorio origen que tengamos enlazado, en el caso de haber enlazado nuestro repositorio local con un git clone, origin es el repositorio de donde hemos clonado nuestra copia en local. Como vemos, podemos seleccionar la rama del repositorio a la que empujar nuestros cambios, en el ejemplo dev, nuestra rama de desarrollo.
 
