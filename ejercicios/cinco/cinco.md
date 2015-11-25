@@ -34,7 +34,7 @@ $ git diff stash@{0}
 
 ### Guardar cambios en el stash
 
-Podemos listar los repositorios enlazados en nuestro repositorio local de la siguiente forma:
+Podemos guardar nuestros cambios en la pila del stash con el siguiente comando:
 
 ```
 $ git stash
