@@ -1,69 +1,48 @@
-# Ejericio 1
+# Ejericio 2
 
-## Uso de stage/commit/push
+## Uso de fecth/merge/pull, como mantener actualizados mis cambios
 
-### stage
+Cuando trabajamos en equipo, necesitamos tener actualizados nuestro repositorio en la rama en la que estemos trabajando para evitar tener muchos conflictos al final de nuestro desarrollo, es mucho mas sencillo actualizar poco a poco, los cambios que los demás desarrolladores están mergeando en la rama devpara así poder resolver los conflictos si los tuviésemos de una manera mucho más trivial, divide y vencerás.
 
-Uno de los conceptos más esenciales en git es el de el stagin area. Su uso fundamental puede cambiar la forma en la que has trabajado hasta ahora con SVN.
+### fecth
 
-Con la mayoría de los otros sistemas de control de versiones, hay 2 lugares para almacenar datos: tu copia de trabajo (las carpetas / archivos que estas utilizando actualmente) y el almacén de datos (donde el control de versiones decide cómo empaquetar y almacenar los cambios). En Git hay una tercera opción: el stage ( área de ensayo o índice). Se trata básicamente de un muelle de carga donde se llega a determinar qué cambios se van a envíar en el siguiente paso, el commit.
+Podemos usar el comando fecth, con este comando podremos traermos los cambios de otros desarrolladores de cualquier repositorio enlazado a nuestro repositorio local en la rama que necesitemos por ejemplo:
 
+```
+$ git fecth zero dev
 
-#### Ver en que ficheros he introducido cambios
+```
 
-Podemos ver el status de los cambios en nuestros ficheros de la siguiente forma:
+En el ejemplo nos estamos trallendo los cambios del repositorio del que hicimos el frok, que lo hemos enlazado con el pseudónimo zero en su rama dev. En teoría, los desarrolladores deberían mergear el código de sus forks a este repositorio centralizado del que todos hemos ido haciendo nuestros propios forks y después clonandolos en una copia en local.
 
-    $ git status
-     
-#### Añadir fichero con cambios al stage
+De como enlazar repositorios a nuestro repositorio local lo trataremos en el [ejercício 4, gestión de repositorios remotos](../cuatro/cuatro.md).
+
+De la misma forma, podemos traernos cambios de cualquier repositorio enlazado, en cualquiera de sus ramas.
+
+### merge
+
+Podemos usar el comando merge, con este comando podremos mezclar los cambios de otros desarrolladores con los nuestros, por ejemplo:
+
+```
+$ git checkout ramaA
+$ proyecto - ramaA > git merge ramaB
+
+````
+
+En este ejemplo estamos cambiandonos de rama, a la rama `ramaA` y estamos mezclando la rama `ramaB` en ella.
+
+### pull
+
+Podemos usar el comando pull, con este comando podremos traermos los cambios de otros desarrolladores de cualquier repositorio enlazado a nuestro repositorio local en la rama que necesitemos y mezclarlos con nuestros cambios, por ejemplo:
+
+```
+$ git pull zero dev
+
+```
+Notemos entonces que el **pull es un fetch más un merge** en la misma operación.
+ 
+Es posible que al traernos estos cambios podamos tener conflictos en nuestros cambios y los de otros desarrolladores. Esto se debe a que ambos abrimos rama en el mismo punto en la rama dev, con lo cual, el merge automático no sabe exactamente con qué cambio de cual commit quedarse, ya que ninguno en principio estaría por encima del otro.
+
+Cuando tenemos esta situación tendremos que hacer un merge manual, normalmente con una herramienta configurada para ello, pero esto lo veremos en el [capítulo 8 - El merge y el mergetool](../ocho/ocho.md).
     
-Para añadir cambios de un fichero al stage podemos hacerlo de la siguiente forma: 
 
-    $ git add path/nombreDelArchivo.extensionDelArchivo
-
-También podemos añadir todos los archivos que tienen cambios al stage en una misma operación con el comando:
-
-     $ git add .
-    
-### commit
-
-#### Hacer un commit
-
-EL commit es el siguiente paso antes de empujar nuestros cambios hacia otro repositorio, con el commit estamos grabando nuestros cambios en nuestro repositorio local.
-
-	$ git commit -m "Mensaje del commit"
-
-Los mensajes del commit son muy importantes, leyendolos se debería entender que se está haciendo y la cronología de los cambios. Es una buena práctica hacer commits pequeños, bien descritos, para la integración continua y la regresión es fundamental unos commits bien acotados y definidos.
-
-Para escribir buenos mensajes de commits recomiendo siempre este artículo:
-
-[How to write a git commit message](http://chris.beams.io/posts/git-commit/)
-
-Aunque podríamos resumirlo en algo muy sencillo
-
-    $ git commit -m "describe de una manera sencilla tus cambios"
-    
-#### Reescribir un commit mal escrito
-
-Podemos editar un commit mal escrito antes de empujarlo con el siguiente comando
-
-    $ git commit --amend
-    
-Tener en cuenta que lanzará nuestro editor, seguramente vi en consola. Aqui una Cheatsheet de comandos para editar con vi
-
-[Vi cheatsheet](http://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf)
-
-## push
-
-### Empujando nuestors cambios a otro repositorio
-
-Hasta ahora con el commit hemos grabado nuestros cambios en nuestro repositorio en local, vamos ahora a empujar nuestros cambios hacia cualquier repositorio que tengamos enlazado.
-
-    $git push repositorioAlQueEmpujar ramaALaQueEmpujar
-    $git push origin dev
-    
-En este ejemplo origin es el repositorio origen que tengamos enlazado, en el caso de haber enlazado nuestro repositorio local con un git clone, origin es el repositorio de donde hemos clonado nuestra copia en local. Como vemos, podemos seleccionar la rama del repositorio a la que empujar nuestros cambios, en el ejemplo dev, nuestra rama de desarrollo.
-
-
-
-  
