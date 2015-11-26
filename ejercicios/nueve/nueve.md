@@ -1,4 +1,4 @@
-# Ejericio 9
+# Ejercicio 9
 
 ## Referencias y enlaces de interés
 
@@ -28,4 +28,4 @@
 
 [Sourcetree](https://www.sourcetreeapp.com/)
 
-[giHub Desktop](https://desktop.github.com/)
+[gitHub Desktop](https://desktop.github.com/)
