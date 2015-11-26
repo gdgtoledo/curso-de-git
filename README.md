@@ -25,7 +25,7 @@ Gestión de repositorios remotos, el origin no lo es todo, git es un sistema de 
 
 El stash, esa pila que nos puede ayudar en multitud de operaciones. Saber identificar los casos mas comunes en los que nos ayudaria, añadir a a pila nuestros cambios, sacar y aplicar de la pila nuestros cambios cuando estemos posicionados donde necesitamos etc.
 
-### Ejercicio 6 - Volver para atrás tus cambios
+### [Ejercicio 6 - Volver para atrás tus cambios](ejercicios/seis/seis.md)
 
 Vale, me he equivocado añadiendo al stage un fichero, o me he equivocado commiteando un fichero que no quiero añadir en mi push, ¿Qué debo hacer? Aprenderemos a revisar el log y mover el puntero del estado de cada fichero, a quitarlo del stage, a resetear su estado.
 
