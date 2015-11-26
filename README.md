@@ -36,3 +36,7 @@ Una de las cosas más importantes para un buen flujo de trabajo es conocer toda 
 ### [Ejercicio 8 - El merge y el mergetool](ejercicios/ocho/ocho.md)
 
 Vale la cosa ha ido mal, es normal, tengo conflictos al actualizarme en algún fichero, tengo que mergear, aprenderemos como hacerlo, usar herramientas gráficas y como configurarlas.
+
+### [Ejercicio 9 - Referencias y enlaces de interés](ejercicios/nueve/nueve.md)
+
+Urls de manuales, documentación oficial.
