@@ -18,6 +18,8 @@
 
 [Recetas de git](http://firstaidgit.io/#/)
 
+[Try Git](https://try.github.io)
+
 ### Herramientas de ayuda en el shell
 
 [Bash git prompt](https://github.com/magicmonty/bash-git-prompt)
