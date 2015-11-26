@@ -33,6 +33,6 @@ Vale, me he equivocado añadiendo al stage un fichero, o me he equivocado commit
 
 Una de las cosas más importantes para un buen flujo de trabajo es conocer toda la potencia que git nos pone a nuestro alcance, dos de las más potentes son el rebase y el rebase interactivo, aprenderemos qué es, por qué se usa y cuándo es el momento en el flujo para hacerlo.
 
-### Ejercicio 8 - El merge y el mergetool
+### [Ejercicio 8 - El merge y el mergetool](ejercicios/ocho/ocho.md)
 
 Vale la cosa ha ido mal, es normal, tengo conflictos al actualizarme en algún fichero, tengo que mergear, aprenderemos como hacerlo, usar herramientas gráficas y como configurarlas.
