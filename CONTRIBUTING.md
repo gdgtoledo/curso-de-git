@@ -7,6 +7,11 @@ Cuando queramos enviar contribuir una funcionalidad, ésta deberá ser realizada
 
 Por esta razón, del mismo modo la pull request deberá ser enviada contra la rama `dev`.
 
+## Peer reviews
+Las pull request se deben enviar al usuario que hemos denominado *central*, cuyo nickname es [craftsmanship-toledo](https://github.com/craftsmanship-toledo). Para que los administradores del repo puedan mergear las pulls, es recomendable que haya más de un "**Seems good to me :+1:**" o similar, a modo de aprobación de los cambios. De esta manera no es un único desarrollador el que mira los cambios y así entre varios deciden el merge.
+
+Si estamos por el contrario haciendo peer-reviews entre compañeros, sin enviar todavía al *central*, lo más aconsejable es ir enviando las pulls de uno a otro (**siempre contra la rama dev, o contra la rama de la feature**), hasta conseguir una pull **good-to-merge**. Entonces, uno de ellos ya la puede enviar al *central* y esperar por los suficientes "**Seems good to me :+1:**".
+
 ## Github Issues
 Cuando detectemos un bug en el proyecto, debemos crear una issue en Github, de modo que se puedan trazar los commits que resuelven la misma.
 
