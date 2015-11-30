@@ -118,7 +118,7 @@ Podemos crear una foto del estado de nuestro repositorio en cualquier rama.
 
 ### Como crear un tag ligero
 
-Podemos crear tags que **no almacenen objetos** de tipo Tag en la base de datos pero que sí creen la referencia en .git/refs/tags
+Podemos crear tags que **no almacenen objetos** de tipo Tag en la base de datos pero que sí creen la referencia en `.git/refs/tags`
 
 ```
 $ git tag v0.1
@@ -143,4 +143,4 @@ tagger Oscar Campos [oscar .campos@************.com]
 Release v0.1
 ```
 
-Dicho objeto se almacenará en el directorio .git/objects/ y creará una referencia permanente en .git/refs/tags/v0.1 que contendrá el SHA-1 del tag.
+Dicho objeto se almacenará en el directorio `.git/objects/` y creará una referencia permanente en `.git/refs/tags/v0.1` que contendrá el SHA-1 del tag.
