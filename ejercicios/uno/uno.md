@@ -32,6 +32,12 @@ También podemos añadir todos los archivos que tienen cambios al stage en una m
 $ git add .
 ```
 
+Podemos añadir todos los archivos modificados para el commit aunque omitiendo los nuevos
+
+```
+$git add --all 
+```
+
 #### Añadir partes de un fichero con cambios al stage
 
 Si quisiéramos añadir sólo partes de un fichero al stage, deberíamos primero identificar qué bloques (o chunks) del fichero queremos añadir.
