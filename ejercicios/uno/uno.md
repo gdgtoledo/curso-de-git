@@ -1,6 +1,6 @@
 # Ejericio 1
 
-## Uso de stage/commit/push
+## Uso de stage/commit/push/tag
 
 ### stage
 
@@ -92,6 +92,49 @@ $git push origin dev
     
 En este ejemplo origin es el repositorio origen que tengamos enlazado, en el caso de haber enlazado nuestro repositorio local con un git clone, origin es el repositorio de donde hemos clonado nuestra copia en local. Como vemos, podemos seleccionar la rama del repositorio a la que empujar nuestros cambios, en el ejemplo dev, nuestra rama de desarrollo.
 
+### Empujando nuestors tags
 
+Podemos empujar al nuestro origin un tag en concreto:
 
+```
+$ git push origin v1.5
+```
+
+O podemos empujar todos los tags que aún nos quedan por empujar:
+
+```
+$ git push origin --tags
+```
+
+## tag
+
+Podemos crear una foto del estado de nuestro repositorio en cualquier rama.
+
+### Como crear un tag ligero
+
+Podemos crear tags que **no almacenen objetos** de tipo Tag en la base de datos pero que si creen la referencia en .git/refs/tags
+
+```
+$ git tag v0.1
+```
+
+### Como crear un tag con objeto de datos
+
+Si queremos etiquetar nuestro código en base a cada vez que hacemos un despliegue a producción o cada vez que liberamos un binario, podemos hacerlo de forma realmente sencilla:
+
+```
+$ git tag -a v0.1 -m 'Release v0.1'
+```
   
+El comando anterior creará un nuevo objeto Git con una estructura similar a la siguiente:
+
+```
+tag: b45fb8
+object 2bfd97
+type commit
+tag v0.1
+tagger Oscar Campos [oscar .campos@************.com]
+Release v0.1
+```
+
+Dicho objeto se almacenará en el directorio .git/objects/ y creará una referencia permanente en .git/refs/tags/v0.1 que contendrá el SHA-1 del tag.
