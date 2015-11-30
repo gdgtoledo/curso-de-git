@@ -1,9 +1,9 @@
 # CONTRIBUIR AL PROYECTO
 
-Este documento pretende definir unas pautas básicas de contirbución al proyecto, de modo que se mantenga cierta uniformidad del código en el repositorio.
+Este documento pretende definir unas pautas básicas de contribución al proyecto, de modo que se mantenga cierta uniformidad del código en el repositorio.
 
 ## Ramas y funcionalidades
-Cuando queramos enviar contribuir una funcionalidad, ésta deberá ser realizada en una nueva rama, que debería partir de la rama `dev`.
+Cuando queramos enviar o contribuir con una funcionalidad, ésta deberá ser realizada en una nueva rama, que debería partir de la rama `dev`.
 
 Por esta razón, del mismo modo la pull request deberá ser enviada contra la rama `dev`.
 
@@ -25,6 +25,6 @@ Como `git` utiliza la almohadilla como inicio de comentario de línea, si quisi�
 ```
 
 ## Formato de los ficheros MARKDOWN
-Aunque existen varios formatos aceptados del lenguaje markdown, **preferiremos** los estándar definidos en Github sobre el resto. Estos estándares se describen en [Github Markdown Basics]((https://help.github.com/articles/markdown-basics/).
+Aunque existen varios formatos aceptados del lenguaje markdown, **preferiremos** los estándares definidos en Github sobre el resto. Estos estándares se describen en [Github Markdown Basics]((https://help.github.com/articles/markdown-basics/).
 
 No obstante, podrían utilizarse otros formatos **en favor de la claridad y la legibilidad**, si así se considerara.
