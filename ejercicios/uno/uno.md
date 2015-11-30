@@ -1,4 +1,4 @@
-# Ejericio 1
+# Ejercicio 1
 
 ## Uso de stage/commit/push/tag
 
@@ -35,7 +35,7 @@ $ git add .
 Podemos añadir todos los archivos modificados para el commit aunque omitiendo los nuevos
 
 ```
-$git add --all 
+$git add --all
 ```
 
 #### Añadir partes de un fichero con cambios al stage
@@ -87,7 +87,7 @@ Tened en cuenta que lanzará nuestro editor, seguramente vi en consola. Aquí un
 
 ## push
 
-### Empujando nuestors cambios a otro repositorio
+### Empujando nuestros cambios a otro repositorio
 
 Hasta ahora con el commit hemos grabado nuestros cambios en nuestro repositorio en local, vamos ahora a empujar nuestros cambios hacia cualquier repositorio que tengamos enlazado.
 
@@ -95,12 +95,12 @@ Hasta ahora con el commit hemos grabado nuestros cambios en nuestro repositorio 
 $git push repositorioAlQueEmpujar ramaALaQueEmpujar
 $git push origin dev
 ```
-    
+
 En este ejemplo origin es el repositorio origen que tengamos enlazado, en el caso de haber enlazado nuestro repositorio local con un git clone, origin es el repositorio de donde hemos clonado nuestra copia en local. Como vemos, podemos seleccionar la rama del repositorio a la que empujar nuestros cambios, en el ejemplo dev, nuestra rama de desarrollo.
 
-### Empujando nuestors tags
+### Empujando nuestros tags
 
-Podemos empujar al nuestro origin un tag en concreto:
+Podemos empujar un tag concreto a nuestro origin:
 
 ```
 $ git push origin v1.5
@@ -118,20 +118,20 @@ Podemos crear una foto del estado de nuestro repositorio en cualquier rama.
 
 ### Como crear un tag ligero
 
-Podemos crear tags que **no almacenen objetos** de tipo Tag en la base de datos pero que si creen la referencia en .git/refs/tags
+Podemos crear tags que **no almacenen objetos** de tipo Tag en la base de datos pero que sí creen la referencia en .git/refs/tags
 
 ```
 $ git tag v0.1
 ```
 
-### Como crear un tag con objeto de datos
+### Cómo crear un tag con objeto de datos
 
 Si queremos etiquetar nuestro código en base a cada vez que hacemos un despliegue a producción o cada vez que liberamos un binario, podemos hacerlo de forma realmente sencilla:
 
 ```
 $ git tag -a v0.1 -m 'Release v0.1'
 ```
-  
+
 El comando anterior creará un nuevo objeto Git con una estructura similar a la siguiente:
 
 ```
