@@ -47,7 +47,7 @@ Podemos devolver nuestro repositorio al estado de un commit anterior, sabiendo e
 $ git reset numeroDeComit
 ```
 
-### Remover un commit local del historico
+### Remover un commit local del histórico
 
 Con el comando **reset** y el parámetro **--hard** podemos rebobinar el puntero los números de commits que necesitemos borrándose del historial.
 
@@ -55,7 +55,7 @@ Con el comando **reset** y el parámetro **--hard** podemos rebobinar el puntero
 $ git reset --hard HEAD~numeroDeCommitsARebobinar
 $ git reset --hard HEAD~2
 ```
-**Importante** es recordar que si usamos el parámetro **--hard** no podremos volver a recuperar ese historico de commits, que se borrará automáticamente.
+**Importante** es recordar que si usamos el parámetro **--hard** no podremos volver a recuperar ese histórico de commits, que se borrará automáticamente, excepto si tenemos almacenado (en un fichero externo, por ejemplo) el listado de commits previo a la ejecución de `git reset --hard`, ya que, en ese caso, un `git reset --hard` añadiendo el número del último commit anterior al primer `reset --hard`, nos devolvería todo el historial previo.
 
 ### Recuperando una rama borrada
 
@@ -65,7 +65,7 @@ Podemos recuperar una rama borrada con el comando **reflog** y el **checkout**
 $ git reflog
 ```
 
-Copiamos el número commit hash anterior al commit que borra la rama
+Copiamos el número de commit hash anterior al commit que borra la rama
 
 ```
 $ git checkout hashDelCommitAnteriorQueBorrabaLaRama
