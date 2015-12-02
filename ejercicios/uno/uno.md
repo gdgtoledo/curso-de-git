@@ -1,6 +1,6 @@
-# Ejericio 1
+# Ejercicio 1
 
-## Uso de stage/commit/push
+## Uso de stage/commit/push/tag
 
 ### stage
 
@@ -30,6 +30,12 @@ También podemos añadir todos los archivos que tienen cambios al stage en una m
 
 ```
 $ git add .
+```
+
+Podemos añadir todos los archivos modificados para el commit aunque omitiendo los nuevos
+
+```
+$git add --all
 ```
 
 #### Añadir partes de un fichero con cambios al stage
@@ -81,7 +87,7 @@ Tened en cuenta que lanzará nuestro editor, seguramente vi en consola. Aquí un
 
 ## push
 
-### Empujando nuestors cambios a otro repositorio
+### Empujando nuestros cambios a otro repositorio
 
 Hasta ahora con el commit hemos grabado nuestros cambios en nuestro repositorio en local, vamos ahora a empujar nuestros cambios hacia cualquier repositorio que tengamos enlazado.
 
@@ -89,9 +95,52 @@ Hasta ahora con el commit hemos grabado nuestros cambios en nuestro repositorio 
 $git push repositorioAlQueEmpujar ramaALaQueEmpujar
 $git push origin dev
 ```
-    
+
 En este ejemplo origin es el repositorio origen que tengamos enlazado, en el caso de haber enlazado nuestro repositorio local con un git clone, origin es el repositorio de donde hemos clonado nuestra copia en local. Como vemos, podemos seleccionar la rama del repositorio a la que empujar nuestros cambios, en el ejemplo dev, nuestra rama de desarrollo.
 
+### Empujando nuestros tags
 
+Podemos empujar un tag concreto a nuestro origin:
 
-  
+```
+$ git push origin v1.5
+```
+
+O podemos empujar todos los tags que aún nos quedan por empujar:
+
+```
+$ git push origin --tags
+```
+
+## tag
+
+Podemos crear una foto del estado de nuestro repositorio en cualquier rama.
+
+### Como crear un tag ligero
+
+Podemos crear tags que **no almacenen objetos** de tipo Tag en la base de datos pero que sí creen la referencia en `.git/refs/tags`
+
+```
+$ git tag v0.1
+```
+
+### Cómo crear un tag con objeto de datos
+
+Si queremos etiquetar nuestro código en base a cada vez que hacemos un despliegue a producción o cada vez que liberamos un binario, podemos hacerlo de forma realmente sencilla:
+
+```
+$ git tag -a v0.1 -m 'Release v0.1'
+```
+
+El comando anterior creará un nuevo objeto Git con una estructura similar a la siguiente:
+
+```
+tag: b45fb8
+object 2bfd97
+type commit
+tag v0.1
+tagger Oscar Campos [oscar .campos@************.com]
+Release v0.1
+```
+
+Dicho objeto se almacenará en el directorio `.git/objects/` y creará una referencia permanente en `.git/refs/tags/v0.1` que contendrá el SHA-1 del tag.
