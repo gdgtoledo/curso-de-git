@@ -1,6 +1,4 @@
-# Ejercicio 9
-
-## Referencias y enlaces de interés
+# Referencias y enlaces de interés
 
 ### Documentacion
 
