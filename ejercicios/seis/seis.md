@@ -87,7 +87,7 @@ $ git update-ref refs/tags/tagNameKey
 
 ### Remover un commit despues de pushearlo
 
-Podemos revertir uno o más commits que queramos borrar del repositorio remoto, sólo tenemos que usar el comando **reset** y saber el hash del commit al cual queramos revertir. Esta operación nos creará un commit de revert:
+Podemos revertir uno o más commits que queramos borrar del repositorio remoto, sólo tenemos que usar el comando **revert** y saber el hash del commit al cual queramos revertir. Esta operación nos creará un commit de revert:
 
 ```
 git revert b712c3c
