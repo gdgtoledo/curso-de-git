@@ -25,7 +25,7 @@ $ git checkout -b ramaDevA
 $ git checkout -b ramaDevB
 ```
 
-Pasado un tiempo, el desarrollador A ha introducido un fix que el desarrollador B necesita. Entonces, el desarrollador B obtiene la rama en donde se ha realizado el cambio, y luego de verificar la historia, lo identifica:
+Pasado un tiempo, el desarrollador B necesita un fix que el desarrollador A previamente introdujo en su rama. Entonces, el desarrollador B obtiene la rama en donde se ha realizado el cambio, y después de verificar la historia, identifican el commit del cambio:
 
 ```
 + 80fbd2921656aa59099467054009404263284dbb I-98345 - Arreglo el usuario de listado en las vistas
