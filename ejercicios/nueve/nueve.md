@@ -10,7 +10,7 @@ Quizás una de los comandos más interesantes de Git es el que se conoce como ch
 
 Entonces, lo que hace básicamente cherry-pick es tomar uno o varios commits de cualquier rama, y aplicarlos en la rama actual.
 
-Pero, *porqué hacer cherry-pick en lugar de hacer merge/rebase de una rama sobre otra?*
+Pero, *por qué hacer cherry-pick en lugar de hacer merge/rebase de una rama sobre otra?*
 
 La respuesta yace en que en algunos casos no podemos hacer merge debido a versiones incompatibles o que simplemente no queremos toda la funcionalidad de la otra rama.
 
@@ -31,7 +31,7 @@ Pasado un tiempo, el desarrollador A ha introducido un fix que el desarrollador 
 + 80fbd2921656aa59099467054009404263284dbb I-98345 - Arreglo el usuario de listado en las vistas
 ```
 
-En lugar de aplicar todos los cambios de la rama, el desarrollador B solo necesita especificar que commit es el que desea aplicar sobre su rama, ejecutándo el siguiente comando:
+En lugar de aplicar todos los cambios de la rama, el desarrollador B solo necesita especificar qué commit es el que desea aplicar sobre su rama, ejecutando el siguiente comando:
 
 ```
 $ git cherry-pick 80fbd2921656aa59099467054009404263284dbb
