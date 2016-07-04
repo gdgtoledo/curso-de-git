@@ -1,4 +1,4 @@
-# Ejericio 10
+# Ejercicio 9
 
 ## Uso de cherry-pick
 
