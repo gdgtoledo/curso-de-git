@@ -37,6 +37,6 @@ Una de las cosas más importantes para un buen flujo de trabajo es conocer toda 
 
 Vale la cosa ha ido mal, es normal, tengo conflictos al actualizarme en algún fichero, tengo que *mergear*, aprenderemos como hacerlo, usar herramientas gráficas y como configurarlas.
 
-### [Ejercicio 9 - Referencias y enlaces de interés](ejercicios/nueve/nueve.md)
+### [Referencias y enlaces de interés](referencias.md)
 
 Urls de manuales, documentación oficial.
