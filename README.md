@@ -37,6 +37,10 @@ Una de las cosas más importantes para un buen flujo de trabajo es conocer toda 
 
 Vale la cosa ha ido mal, es normal, tengo conflictos al actualizarme en algún fichero, tengo que *mergear*, aprenderemos como hacerlo, usar herramientas gráficas y como configurarlas.
 
-### [Ejercicio 9 - Referencias y enlaces de interés](ejercicios/nueve/nueve.md)
+### [Ejercicio 9 - El uso de cherry-pick](ejercicios/nueve/nueve.md)
+
+Si quieres mover ciertos commits entre las ramas que tengas, `cherry-pick` es tu comando. Aprende en este apartado a seleccionar un commit a partir de su hash para llevarlo a la rama en la que lo necesites.
+
+### [Referencias y enlaces de interés](referencias.md)
 
 Urls de manuales, documentación oficial.
