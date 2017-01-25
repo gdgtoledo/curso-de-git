@@ -11,7 +11,7 @@ Podemos listar las ramas que tengamos en nuestro repositorio local de la siguien
 ```
 $ git branch
 $ git branch -av
-```   
+```
 
 El primero nos haría un listado simple de ramas
 
@@ -44,6 +44,14 @@ Podemos borrar una rama local de git con el siguiente comando:
 
 ```
 $ git branch -D nombreDeLaRama
+```
+
+### Renombrar una rama local
+
+Podemos renonmbrar una rama local de git con el siguiente comando:
+
+```
+$ git branch -m nombreDeLaRamaAntigua nombreDeLaRamaNueva
 ```
 
 ### Cambiar de rama
