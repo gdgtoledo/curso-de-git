@@ -48,7 +48,7 @@ $ git branch -D nombreDeLaRama
 
 ### Renombrar una rama local
 
-Podemos renonmbrar una rama local de git con el siguiente comando:
+Podemos renombrar una rama local de git con el siguiente comando:
 
 ```
 $ git branch -m nombreDeLaRamaAntigua nombreDeLaRamaNueva
