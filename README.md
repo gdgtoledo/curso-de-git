@@ -1,9 +1,9 @@
 # CURSO DE GIT - Craftsmanship Toledo
 
 
-### [Ejercicio 0 - Iniciar un proyecto git/git init/git clone/fork](ejercicios/zero/cero.md)
+### [Ejercicio 0 - Iniciar un proyecto git/git init/git clone/fork/ignore](ejercicios/zero/cero.md)
 
-Cómo empezar una proyecto *git*, iniciar desde local o clonar un repositorio existente y en nuestro local. También hablaremos de cómo podemos usar extras, como *forkear* un repositorio con la interfaz de Github para vitaminar nuestro *workflow*.
+Cómo empezar una proyecto *git*, iniciar desde local o clonar un repositorio existente y en nuestro local. También hablaremos de cómo podemos usar extras, como *forkear* un repositorio con la interfaz de Github para vitaminar nuestro *workflow*. Además, veremos cómo ignorar ficheros o directorios para no subirlos al repositorio.
 
 ### [Ejercicio 1 - Uso de stage/commit/push](ejercicios/uno/uno.md)
 
