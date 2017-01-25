@@ -48,14 +48,14 @@ Al hacer clone, estamos bajando a nuestra máquina local el repositorio git en c
 
 ## Ignorar ficheros/directorios
 
-¿Por qué querríamos ignorar un directorio o un fichero? Posiblemente, el motivo más importante sea la seguridad, pues no querríamos subir a nuestro repositorio público un fichero que contenga contraseñas o rutas absolutas de nuestro sistema. Éste podría ser un claro ejemplo, pero podríamos añadir aquellos ficheros que genera el IDE (.idea en IntelliJ, .classpath en Eclipse, etc.), el código compilado (¡ojo, el generado también hay que subirlo al repositorio!), artefactos y dependencias que pudieran ser resuelstas en tiempo de compilación y cacheadas (p.e. con Maven, Gradle, NPM...), o configuraciones personales que cada desarrollador del equipo no debería contribuir al proyecto, sino que éste debería tener una manera abstracta de leer una configuración por defecto (que es la que se subiría al repositorio) extensible por configuraciones particulares que se pudieran excluir.
+¿Por qué querríamos ignorar un directorio o un fichero? Posiblemente, el motivo más importante sea la seguridad, pues no querríamos subir a nuestro repositorio público un fichero que contenga contraseñas o rutas absolutas de nuestro sistema. Éste podría ser un claro ejemplo, pero podríamos añadir aquellos ficheros que genera el IDE (.idea en IntelliJ, .classpath en Eclipse, etc.), el código compilado (¡ojo, el generado también hay que subirlo al repositorio!), artefactos y dependencias que pudieran ser resueltas en tiempo de compilación y cacheadas (p.e. con Maven, Gradle, NPM...), o configuraciones personales que cada desarrollador del equipo no debería contribuir al proyecto, sino que éste debería tener una manera abstracta de leer una configuración por defecto (que es la que se subiría al repositorio) extensible por configuraciones particulares que se pudieran excluir.
 
-Para hacer esta exclusión, git interpreta un fichero llamado `gitignore`, que ubicado en cualquier directorio permite definir en él una lista de expresiones que identifiquen los ficheros a excluir. Normalmente, cada proyecto define un único `gitignore` en el raíz del mismo, en el que se incluirán todas las exclusiones, pero podrían existir más ficheros.
+Para hacer esta exclusión, git interpreta un fichero llamado `.gitignore`, que ubicado en cualquier directorio permite definir en él una lista de expresiones que identifiquen los ficheros a excluir. Normalmente, cada proyecto define un único `.gitignore` en el raíz del mismo, en el que se incluirán todas las exclusiones, pero podrían existir más ficheros.
 
 Por ejemplo, se podrían excluir todos los ficheros dentro del directorio `target` de un proyecto Maven:
 
 ```
 target/
-``
+```
 
 Existe un proyecto de Github con multitud de plantillas con ficheros de exclusión para muchos tipos de proyecto: [https://github.com/github/gitignore](https://github.com/github/gitignore)
