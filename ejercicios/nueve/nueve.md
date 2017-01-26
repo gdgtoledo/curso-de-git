@@ -1,33 +1,44 @@
 # Ejercicio 9
 
-## Referencias y enlaces de interés
+## Uso de cherry-pick
 
-### Documentacion
+### Definición
 
-[Documentation oficial](http://git-scm.com/book/en/v2)
+Quizás una de los comandos más interesantes de Git es el que se conoce como `cherry-pick`. La ayuda de Git nos da una idea de lo que este hace:
 
-[Pro git book spanish](http://git-scm.com/book/es/v2)
+`Dado uno o más commits existentes, aplicar los cambios que cada uno de ellos introduce, grabando un nuevo commit para cada uno ellos.`
 
-[A git guide example](http://rogerdudler.github.io/git-guide/)
+Entonces, lo que hace básicamente `cherry-pick` es tomar uno o varios commits de cualquier rama, y aplicarlos en la rama actual.
 
-### Tutorials
+Pero, *por qué hacer cherry-pick en lugar de hacer merge/rebase de una rama sobre otra?*
 
-[git immersion tutorial](http://gitimmersion.com/)
+La respuesta yace en que en algunos casos no podemos hacer merge debido a versiones incompatibles o que simplemente no queremos toda la funcionalidad de la otra rama.
 
-[Atlassian git tutorial](https://es.atlassian.com/git/tutorials/setting-up-a-repository)
+Un caso de uso común es cuando se ha aplicado un fix en una rama y queremos ver si ese fix también puede resolver el problema que se presenta en nuestra rama. En lugar de hacer los cambios de forma manual, simplemente hacemos un `cherry-pick` de dicho commit o commits.
 
-[Recetas de git](http://firstaidgit.io/#/)
+### Caso práctico
 
-[Try Git](https://try.github.io)
+Supongamos que dos desarrolladores (A y B) se encuentran trabajando sobre ramas provenientes de master y que ambos crearon sus ramas mediante el siguiente comando, tal como se presentó en el capítulo tres:
 
-### Herramientas de ayuda en el shell
+```
+$ git checkout -b ramaDevA
+$ git checkout -b ramaDevB
+```
 
-[Bash git prompt](https://github.com/magicmonty/bash-git-prompt)
+Pasado un tiempo, el desarrollador B necesita un fix que el desarrollador A previamente introdujo en su rama. Entonces, el desarrollador B obtiene la rama en donde se ha realizado el cambio, y después de verificar la historia, identifican el commit del cambio:
 
-[Oh my git](https://github.com/arialdomartini/oh-my-git)
+```
++ 80fbd2921656aa59099467054009404263284dbb I-98345 - Arreglo el usuario de listado en las vistas
+```
 
-### Herramientas gráficas
+En lugar de aplicar todos los cambios de la rama, el desarrollador B solo necesita especificar qué commit es el que desea aplicar sobre su rama, ejecutando el siguiente comando:
 
-[Sourcetree](https://www.sourcetreeapp.com/)
+```
+$ git cherry-pick 80fbd2921656aa59099467054009404263284dbb
+```
 
-[gitHub Desktop](https://desktop.github.com/)
+En caso de que fueran varios commits los que se desean aplicar, estos se pueden definir separados por un espacio:
+
+```
+$ git cherry-pick #hash1 #hash2 ..... #hashn
+```
