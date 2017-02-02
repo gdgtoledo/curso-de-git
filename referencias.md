@@ -12,6 +12,8 @@
 
 [git immersion tutorial](http://gitimmersion.com/)
 
+[learning git branching](http://learngitbranching.js.org/)
+
 [Atlassian git tutorial](https://es.atlassian.com/git/tutorials/setting-up-a-repository)
 
 [Recetas de git](http://firstaidgit.io/#/)
