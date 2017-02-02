@@ -19,36 +19,36 @@ En git podemos poner cualquier herramienta de merge manual que queramos, tan sol
 1. Descargar p4merge e instalarlo
 2. Crear Scripts para ejecutar p4merge
 
-	Crear un nuevo fichero de texto en **/usr/local/bin** llamado p4merge con el 	contenido:
+   Crear un nuevo fichero de texto en **/usr/local/bin** llamado p4merge con el 	contenido:
 
-	```
-	#!/bin/sh
-	/Applications/p4merge.app/Contents/MacOS/p4merge $*
-	```
+   ```
+   #!/bin/sh
+   /Applications/p4merge.app/Contents/MacOS/p4merge $*
+   ```
 3. Hacer el script ejecutable
 
-	```
-	chmod +x p4merge
-	p4diff*
-	Create a new text file in /usr/local/bin called p4diff and add the following lines:
-	```
+   ```
+   chmod +x p4merge
+   p4diff*
+   Create a new text file in /usr/local/bin called p4diff and add the following lines:
+   ```
 
 4. Configurar git para usar este script:
 
-	Abrir el fichero de configuración de git con un editor, probablemente en **~/.gitconig** y añadir estas líneas:
-	
-	```
-	[merge]
-		keepBackup = false;
-		tool = p4merge
-	[mergetool "p4merge"]
-		cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-		keepTemporaries = false
-		trustExitCode = false
-		keepBackup = false
-	[diff]
-		external = p4diff
-	```
+   Abrir el fichero de configuración de git con un editor, probablemente en **~/.gitconig** y añadir estas líneas:
+
+   ```
+   [merge]
+   	keepBackup = false;
+   	tool = p4merge
+   [mergetool "p4merge"]
+   	cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+   	keepTemporaries = false
+   	trustExitCode = false
+   	keepBackup = false
+   [diff]
+   	external = p4diff
+   ```
 
 ### Mergear una rama manualmente contra otra
 
@@ -56,11 +56,11 @@ A veces queremos hacer un proceso de merge manual, no tiene que ver con traernos
 
 1. Vamos a la ramaA en la que quiero mergear los cambios de la ramaB
 
-	```
-	$ git checkout ramaA
-	```
+   ```
+   $ git checkout ramaA
+   ```
 2. Una vez posicionados nos traemos los cambios de la ramaB para mergearlos con la rama en la que estamos posicionados, en este caso la ramaA
 
-	```
-	$ git git merge --no-ff
-	```
+   ```
+   $ git merge ramaB
+   ```
