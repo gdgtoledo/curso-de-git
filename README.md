@@ -1,4 +1,4 @@
-# CURSO DE GIT - Craftsmanship Toledo
+# CURSO DE GIT - GDG Toledo
 
 
 ### [Ejercicio 0 - Iniciar un proyecto git/git init/git clone/fork/ignore](ejercicios/zero/cero.md)
